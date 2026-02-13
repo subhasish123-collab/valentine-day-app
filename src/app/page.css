@@ -1,0 +1,207 @@
+.main {
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(135deg, #fff5f7 0%, #ffe6f0 50%, #ffd6e7 100%);
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 107, 157, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: float 20s linear infinite;
+}
+
+.hero-content {
+    text-align: center;
+    padding: var(--spacing-xl);
+    position: relative;
+    z-index: 2;
+}
+
+.heart-burst {
+    font-size: 6rem;
+    animation: heartbeat 2s ease-in-out infinite;
+    margin-bottom: var(--spacing-lg);
+    filter: drop-shadow(0 10px 30px rgba(255, 107, 157, 0.4));
+}
+
+.hero-title {
+    font-family: var(--font-playfair);
+    font-size: 4.5rem;
+    font-weight: 700;
+    background: var(--gradient-romantic);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--spacing-md);
+    animation: fadeInUp 1s ease-out;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-family: var(--font-dancing);
+    font-size: 2.5rem;
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-xl);
+    animation: fadeInUp 1s ease-out 0.2s backwards;
+}
+
+.hero-message {
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    max-width: 600px;
+    margin: 0 auto var(--spacing-xl);
+    animation: fadeInUp 1s ease-out 0.4s backwards;
+}
+
+.script-text {
+    font-family: var(--font-dancing);
+    font-size: 1.8rem;
+    color: var(--color-dark);
+    line-height: 1.8;
+}
+
+.heart-divider {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    font-size: 2rem;
+    animation: fadeInUp 1s ease-out 0.6s backwards;
+}
+
+.heart-divider span {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.heart-divider span:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.heart-divider span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+/* Final Message Section */
+.final-message {
+    padding: var(--spacing-2xl) 0;
+    position: relative;
+    z-index: 2;
+}
+
+.final-card {
+    background: white;
+    padding: var(--spacing-2xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    border: 3px solid var(--color-accent);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.sparkles {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-md);
+    animation: sparkle 3s ease-in-out infinite;
+}
+
+.final-title {
+    font-family: var(--font-playfair);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-lg);
+}
+
+.final-text {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: var(--spacing-xl);
+}
+
+.signature {
+    margin-top: var(--spacing-xl);
+    padding-top: var(--spacing-lg);
+    border-top: 2px solid var(--color-accent);
+}
+
+.signature-text {
+    font-family: var(--font-dancing);
+    font-size: 1.5rem;
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.signature-name {
+    font-family: var(--font-dancing);
+    font-size: 2rem;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+/* Footer */
+.footer {
+    background: var(--gradient-love);
+    color: white;
+    text-align: center;
+    padding: var(--spacing-lg);
+    position: relative;
+    z-index: 2;
+}
+
+.footer p {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .heart-burst {
+        font-size: 4rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.8rem;
+    }
+
+    .script-text {
+        font-size: 1.3rem;
+    }
+
+    .hero-message {
+        padding: var(--spacing-md);
+    }
+
+    .final-title {
+        font-size: 2rem;
+    }
+
+    .final-text {
+        font-size: 1.1rem;
+    }
+
+    .final-card {
+        padding: var(--spacing-lg);
+    }
+}

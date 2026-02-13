@@ -2,6 +2,7 @@
 const nextConfig = {
   output: 'export',
   basePath: '/valentine-day-app',
+  assetPrefix: '/valentine-day-app',
   images: {
     unoptimized: true,
   },

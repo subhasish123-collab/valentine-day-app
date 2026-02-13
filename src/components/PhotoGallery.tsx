@@ -3,39 +3,41 @@
 import Image from 'next/image';
 import './PhotoGallery.css';
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const photos = [
     {
-        src: '/images/photo1.jpg',
+        src: `${basePath}/images/photo1.jpg`,
         caption: 'Beautiful Moments Together',
         alt: 'Couple at the beach'
     },
     {
-        src: '/images/photo2.jpg',
+        src: `${basePath}/images/photo2.jpg`,
         caption: 'By The Sea',
         alt: 'Romantic beach photo'
     },
     {
-        src: '/images/photo3.jpg',
+        src: `${basePath}/images/photo3.jpg`,
         caption: 'Our Special Day',
         alt: 'Happy couple at the beach'
     },
     {
-        src: '/images/photo4.jpg',
+        src: `${basePath}/images/photo4.jpg`,
         caption: 'Forever & Always',
         alt: 'Love at the seaside'
     },
     {
-        src: '/images/photo5.jpg',
+        src: `${basePath}/images/photo5.jpg`,
         caption: 'Sweet Moments with Roses',
         alt: 'Couple with beautiful roses'
     },
     {
-        src: '/images/photo6.jpg',
+        src: `${basePath}/images/photo6.jpg`,
         caption: 'Love & Flowers',
         alt: 'Romantic selfie with pink roses'
     },
     {
-        src: '/images/photo7.jpg',
+        src: `${basePath}/images/photo7.jpg`,
         caption: 'Precious Memories',
         alt: 'Happy together with roses'
     }

@@ -5,6 +5,9 @@ const nextConfig = {
   output: 'export',
   basePath: isProd ? '/valentine-day-app' : '',
   assetPrefix: isProd ? '/valentine-day-app' : '',
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isProd ? '/valentine-day-app' : '',
+  },
   images: {
     unoptimized: true,
   },
